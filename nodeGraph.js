@@ -1,7 +1,7 @@
 var nodeGraph = {
     //settings object for nodeGraph
     settings: {
-        "graphDivID": "nodeConnectionGraph", //the class name that will be targeted for adding the node graph. Example: <div class="nodeConnectionGraph"></div>
+        "graphDivID": "nodeConnectionGraph", //the class name that will be targeted for adding the node graph.
         "tagClass": "tagForNodeGraph", //The class where nodeGraph will search for tags to start building the nodes
         "tagClassInParentElement": true, //Are the tags children of tagClass?
         "separatorForNodeConnections": "@", //this allows for tag names such as "_connection_node" and "@connection@node"
