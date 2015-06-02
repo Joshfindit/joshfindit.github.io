@@ -14,7 +14,7 @@ var nodeGraph = {
         //called when page loads
 
         var self = this;
-        self.loadAllReuiredFiles();
+        self.loadAllRequiredFiles();
 
     },
     prepareData: function() {
@@ -357,7 +357,7 @@ var nodeGraph = {
 
 
     },
-    loadAllReuiredFiles: function() {
+    loadAllRequiredFiles: function() {
         //load requried js libraries if not loaded
         var self = this;
 
