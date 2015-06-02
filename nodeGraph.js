@@ -1,20 +1,20 @@
 var nodeGraph = {
     //settings object for nodeGraph
     settings: {
-        "graphDivID": "nodeConnectionGraph",
-        "tagClass": "tagForNodeGraph",
-        "tagClassInParentElement": true,
-        "separatorForNodeConnections": "@",
-        "separatorForSpacesInTags": ".",
-        "hrefRootForNodes": "http://joshuabuxton.ca",
-        "graphWidth": 920,
-        "graphHeight": 500
+        "graphDivID": "nodeConnectionGraph", //the class name that will be targeted for adding the node graph. Example: <div class="nodeConnectionGraph"></div>
+        "tagClass": "tagForNodeGraph", //The class where nodeGraph will search for tags to start building the nodes
+        "tagClassInParentElement": true, //Are the tags children of tagClass?
+        "separatorForNodeConnections": "@", //this allows for tag names such as "_connection_node" and "@connection@node"
+        "separatorForSpacesInTags": ".", //If your html does not allow for spaces in tags, substitute for this separator
+        "hrefRootForNodes": "", //When building the links on the nodes, we build like: $hrefRootForNodes + nodename. Note: Links can be explicitly defined in the tag
+        "graphWidth": 920, //Width of the nodeGraph area
+        "graphHeight": 500, //Height of the nodeGraph area
     },
     onLoad: function() {
         //called when page loads
 
         var self = this;
-        self.loadAllRequiredFiles();
+        self.loadAllReuiredFiles();
 
     },
     prepareData: function() {
@@ -357,7 +357,7 @@ var nodeGraph = {
 
 
     },
-    loadAllRequiredFiles: function() {
+    loadAllReuiredFiles: function() {
         //load requried js libraries if not loaded
         var self = this;
 
